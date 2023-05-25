@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=Roboto+Slab&family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=Roboto+Slab&family=Rubik:ital@0;1&family=Shadows+Into+Light&display=swap');
+
+:root
+{
+    --primary-color: #2596be;
+    --body-color: #eeeee4;
+    --bk-nav: #DBFE87;
+    --bk-shape: #FFE381;
+    --bk-border: #CEC288;
+    --general-one: #6F8695;
+    --general-two: #1C448E;
+    --transition-time: .4s ease;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background-color: var(--body-color);
+    background-image: url('Image/roll_img/butterfly-gee5d46c07_1920.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    object-position: top;
+    padding: 8px;
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    height: 70px;
+    background-color: var(--bk-nav);
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo, ul, .text
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    border: 2px solid white;
+    height: 60px;
+    width: 60px;
+    background-image: url('Image/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    transition: var(--transition-time);
+}
+
+ul li
+{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 15px;
+}
+
+ul li a:hover
+{
+    color: orangered;
+}
+
+/*INPUT*/
+.text input
+{
+    padding: 4px;
+    border-radius: 5px;
+}

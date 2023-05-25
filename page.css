@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=Roboto+Slab&family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&family=Roboto+Slab&family=Rubik:ital@0;1&family=Shadows+Into+Light&display=swap');
+
+:root
+{
+    --primary-color: #2596be;
+    --body-color: #eeeee4;
+    --bk-nav: #DBFE87;
+    --bk-shape: #FFE381;
+    --bk-border: #CEC288;
+    --general-one: #6F8695;
+    --general-two: #1C448E;
+    --transition-time: .4s ease;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background-color: var(--body-color);
+    background-image: url('Image/roll_img/butterfly-gee5d46c07_1920.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    object-position: top;
+}
+
+.wrap
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 'h h h h h h h h h h h h'
+                         'c c c c c c c c c c c c';
+}
+
+header
+{
+    grid-area: h;
+}
